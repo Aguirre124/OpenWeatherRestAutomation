@@ -8,30 +8,29 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.rest.interactions.Get;
 import org.openweathermap.models.TestData;
 
-public class ExecuteGet implements Interaction {
+public class ExecuteGetByCityName implements Interaction {
 
-    private final String resource;
+    private final String cityName;
 
-    public ExecuteGet(String resource) {
-        this.resource = resource;
+    public ExecuteGetByCityName(String cityName) {
+        this.cityName = cityName;
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
         SerenityRest.reset();
         actor.attemptsTo(
-                Get.resource(resource).with(
+                Get.resource(cityName).with(
                         request -> request
                                 .contentType(ContentType.JSON)
-                                .queryParam("lat", TestData.getData().get("latitude").toString())
-                                .queryParam("lon", TestData.getData().get("longitude").toString())
+                                .queryParam("q", TestData.getData().get("city").toString())
                                 .queryParam("appid", TestData.getData().get("apikey").toString())
                                 .relaxedHTTPSValidation().log().all()
                 )
         );
     }
 
-    public static ExecuteGet service(String resource) {
-        return Tasks.instrumented(ExecuteGet.class, resource);
+    public static ExecuteGetByCityName service(String cityName) {
+        return Tasks.instrumented(ExecuteGetByCityName.class, cityName);
     }
 }

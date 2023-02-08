@@ -7,7 +7,7 @@ import net.serenitybdd.screenplay.GivenWhenThen;
 import org.openweathermap.exceptions.AssertionsErrorMessages;
 import org.openweathermap.questions.VerifySchema;
 import org.openweathermap.questions.VerifyStatusCode;
-import org.openweathermap.tasks.ConsumeGet;
+import org.openweathermap.tasks.GetByCoordinates;
 import org.openweathermap.tasks.Load;
 import org.openweathermap.utils.resources.WebServicesEndPoints;
 
@@ -20,17 +20,17 @@ import static org.openweathermap.exceptions.AssertionsErrorMessages.THE_STATUS_C
 
 public class GetInfoByLatitudeStepDefinition {
 
-    @Given("load current Latitude and Longitude")
-    public void loadCurrentLatitudeAndLongitude(List<Map<String, String>> data) {
+    @Given("load the data for the test")
+    public void loadTheDataForTheTest(List<Map<String, String>> data) {
         theActorInTheSpotlight().wasAbleTo(
                 Load.testData(data.get(0))
         );
     }
 
-    @When("call get user API")
-    public void callGetUserAPI() {
+    @When("use the service with the Latitude and Longitude parameters")
+    public void useTheServiceWithTheLatitudeAndLongitudeParameters() {
         theActorInTheSpotlight().attemptsTo(
-                ConsumeGet.service(WebServicesEndPoints.URI.getUrl())
+                GetByCoordinates.service(WebServicesEndPoints.URI.getUrl())
         );
 
 

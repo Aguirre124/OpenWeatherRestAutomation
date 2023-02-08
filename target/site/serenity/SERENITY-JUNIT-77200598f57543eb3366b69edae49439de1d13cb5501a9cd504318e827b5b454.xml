@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Consult the current weather data using the name of the city" skipped="2" tests="2" time="0.29" timestamp="2023-02-08 02:45:05"><testcase name="Consume of the service successfully"><skipped/></testcase><testcase name="Validate response body"><skipped/></testcase></testsuite>

@@ -5,28 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d00d9c3d-343c-4c98-aae9-0c5a0bc21de1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/openweathermap/exceptions/AssertionsErrorMessages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/openweathermap/interactions/ExecuteGet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/openweathermap/models/TestData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/openweathermap/questions/VerifySchema.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/openweathermap/questions/VerifyStatusCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/openweathermap/tasks/ConsumeGet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/openweathermap/tasks/Load.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/openweathermap/utils/constants/EndPoints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/openweathermap/utils/resources/WebServicesEndPoints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/openweathermap/runners/GetInfoByLatitude.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/openweathermap/stepdefinitions/GetInfoByLatitudeStepDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/openweathermap/stepdefinitions/hook/Hook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/getInfoByLatitude.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/schemas/GetJsonLatitudeSchema.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/serenity.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/openweathermap/interactions/ExecuteGetByCityName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/openweathermap/tasks/GetByCityName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/openweathermap/runners/GetInfoByCityName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/openweathermap/stepdefinitions/GetInfoByCityNameStepDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/getInfoByCityName.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/schemas/GetJsonCitySchema.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openweathermap/interactions/ExecuteGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openweathermap/interactions/ExecuteGetByCoordinates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openweathermap/tasks/ConsumeGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openweathermap/tasks/GetByCoordinates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/openweathermap/stepdefinitions/GetInfoByLatitudeStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/openweathermap/stepdefinitions/GetInfoByLatitudeStepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/getInfoByLatitude.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/getInfoByLatitude.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/799b1b798d64230e600a265d3b8c5d3268080ab9b77247251f265862cbdfa058.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/799b1b798d64230e600a265d3b8c5d3268080ab9b77247251f265862cbdfa058.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/799b1b798d64230e600a265d3b8c5d3268080ab9b77247251f265862cbdfa058.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/799b1b798d64230e600a265d3b8c5d3268080ab9b77247251f265862cbdfa058.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-a2733b026114caca8f289793ffe99ba2a1b36b0ab87b775767fdc92a2bf15d43.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-a2733b026114caca8f289793ffe99ba2a1b36b0ab87b775767fdc92a2bf15d43.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/a2733b026114caca8f289793ffe99ba2a1b36b0ab87b775767fdc92a2bf15d43.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/a2733b026114caca8f289793ffe99ba2a1b36b0ab87b775767fdc92a2bf15d43.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/a2733b026114caca8f289793ffe99ba2a1b36b0ab87b775767fdc92a2bf15d43.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/a2733b026114caca8f289793ffe99ba2a1b36b0ab87b775767fdc92a2bf15d43.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +68,31 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1675884995" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1675884994" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -87,7 +106,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/juan.aguirre/IdeaProjects/DemoRestScreenplay",
+    "last_opened_file_path": "C:/Users/Public/Documents/Automation/OpenWeather/src/test/resources/features",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -95,11 +114,59 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Public\Documents\Automation\OpenWeather\src\test\resources\features" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.openweathermap.stepdefinitions" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.openweathermap.runners" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.GetInfoByCityName">
+    <configuration name="Feature: getInfoByLatitude" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/getInfoByLatitude.feature" />
+      <option name="GLUE" value="net.serenitybdd.cucumber.actors org.openweathermap.stepdefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="OpenWeather.test" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: getInfoByLatitude" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetInfoByCityName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.openweathermap.runners.GetInfoByCityName&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="GetInfoByLatitude" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -125,7 +192,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GetInfoByCityName" />
         <item itemvalue="Gradle.GetInfoByLatitude" />
+        <item itemvalue="Cucumber Java.Feature: getInfoByLatitude" />
       </list>
     </recent_temporary>
   </component>
